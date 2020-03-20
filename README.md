@@ -15,8 +15,8 @@ In this repository, I will create new projects for the ATmega32 microcontroller.
 I have used custom AVR Fuses for my projects. These Fuses are as follows:
 
 ```
-H Fuse: 0xBF
-L Fuse: 0xD9
+High Fuse: 0xBF
+Low Fuse: 0xD9
 ```
 
 <img src="https://github.com/rxtxinv/ATmega32-Projects/blob/master/Images/Fuses.PNG" height="600" width="800">
