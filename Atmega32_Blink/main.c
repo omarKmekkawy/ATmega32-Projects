@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	DDRB |= (1<<3);
+	DDRB |= (1<<2);
 
     while(1)
     {
-	   PORTB |= (1<<3);
+	   PORTB |= (1<<2);
 	   _delay_ms(1000);
-	   PORTB &= ~(1<<3);
+	   PORTB &= ~(1<<2);
 	   _delay_ms(1000);
     }
 }
