@@ -13,9 +13,9 @@
 void pinMode(volatile unsigned char* DDRx, unsigned char PinNo,	GPIO_Type GPIOType) {
 
 	if (GPIOType == INPUT) {
-		*DDRx &= ~(1 << PinNo);
+		Clrbit(*DDRx,PinNo);
 	} else {
-		*DDRx |= (1 << PinNo);
+		Setbit(*DDRx,PinNo);
 	}
 
 }
@@ -33,10 +33,10 @@ void pinMode(volatile unsigned char* DDRx, unsigned char PinNo,	GPIO_Type GPIOTy
 void digitalWrite(volatile unsigned char* PORTx, unsigned char PinNo, GPIO_Value GPIOValue) {
 
 	if (GPIOValue == HIGH){
-		*PORTx |= (1<<PinNo);
+		Setbit(*PORTx,PinNo);
 	}
 	else {
-		*PORTx &= ~(1<<PinNo);
+		Clrbit(*PORTx,PinNo);;
 	}
 
 }

@@ -11,7 +11,8 @@
 #include "GPIO_Reg.h"
 #include "GPIO_Type_Def.h"
 
-
+#define Setbit(Register,Bit) Register |= (1<<Bit)
+#define Clrbit(Register,Bit) Register &= ~(1<<Bit)
 
 void pinMode(volatile unsigned char* DDRx, unsigned char PinNo, GPIO_Type GPIOType);
 void digitalWrite(volatile unsigned char* PORTx,unsigned char PinNo,GPIO_Value GPIOValue);
