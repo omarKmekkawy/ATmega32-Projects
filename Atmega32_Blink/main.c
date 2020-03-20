@@ -1,19 +1,19 @@
 #include <util/delay.h>
+#include "MCAL/GPIO.h"
+#include "MCAL/GPIO_Reg.h"
 
 #define F_CPU 16000000UL
 
-#define DDRB *((volatile unsigned char*)(0x37))
-#define PORTB *((volatile unsigned char*)(0x38))
-
 int main(void)
 {
-	DDRB |= (1<<2);
+
+	pinMode(DDRB,0,OUTPUT);
 
     while(1)
     {
-	   PORTB |= (1<<2);
-	   _delay_ms(1000);
-	   PORTB &= ~(1<<2);
-	   _delay_ms(1000);
+	   digitalWrite(PORTB,0,HIGH);
+	   _delay_ms(500);
+	   digitalWrite(PORTB,0,LOW);
+	   _delay_ms(500);
     }
 }
