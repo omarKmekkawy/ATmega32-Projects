@@ -31,6 +31,5 @@ Low Fuse: 0xD9
 #### Projects contained
 * [Atmega32_Blink](https://github.com/rxtxinv/ATmega32-Projects/tree/master/Atmega32_Blink) Simple LED blink example.
 * [Atmega32_IO](https://github.com/rxtxinv/ATmega32-Projects/tree/master/Atmega32_IO) Digital I/O and pull up resistor.
-* 
-* 
-* 
+* [Atmega32_LCD] (https://github.com/rxtxinv/ATmega32-Projects/tree/master/Atmega32_LCD) LCD Driver (Not completed yet).
+*  
